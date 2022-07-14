@@ -3,6 +3,7 @@
     --brown: #936450;
     --white: #FFFFFF;
     --black: #000000;
+    --green_dark: #5F6960;
 }
 
 *{
@@ -44,13 +45,29 @@ section {
 }
 
 .text_container {
-    width: 40%;
+    flex-basis: 40%;
+}
+
+p {
+    text-align: start;
+}
+
+.text_spacer {
+    margin: 30px 0 50px;
+}
+
+.text_30 {
+    font-size: 1.5em;
+}
+
+strong {
+    font-weight: bolder;
 }
 
 /* IMAGES */
 
 .img_container {
-    width: 60%
+    flex-basis: 60%
 }
 
 .img_logo {
@@ -59,12 +76,15 @@ section {
 }
 
 .img_logo_full {
-    margin-left: 0.5em;
     width: 70%;
 }
 
 .images {
     width: 70%;
+}
+
+.icon {
+    width: 20%;
 }
 
 /* END IMAGES */
@@ -79,17 +99,16 @@ section {
     z-index: 999;
     border: none;
     outline: none;
-    background-color: var(--green);
-    color: var(--black);
+    background-color: var(--green_dark);
+    color: var(--white);
     cursor: pointer;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 10px;
     font-size: 18px;
   }
   
 #backToTopBtn:hover {
     background-color: var(--brown);
-    color: var(--white);
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
@@ -145,9 +164,9 @@ li a {
 li a:hover {
     background-color: var(--brown);
     color: var(--white);
-    -webkit-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
 }
 
 H5 {
@@ -171,4 +190,77 @@ h1 {
     margin-bottom: 1em;
 }
 
+.about_2 {
+    background: linear-gradient(
+        to right,
+        var(--white) 0%,
+        var(--white) 67%,
+        var(--green) 67%,
+        var(--green) 100%
+    );
+}
+
+.about_4 {
+    height: 40vh;
+    background-color: var(--green);
+}
+
+.about_half {
+    flex-basis: 50%;
+    padding: 1em;
+}
+
+.about_logo_link {
+    margin-bottom: 2em;
+}
+
 /* END ABOUT */
+
+.contact {
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact_title {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: var(--brown);
+    margin: 1em 0 2em 1.7em;
+}
+
+h2 {
+    color: var(--black);
+}
+
+.icons_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* CONTACT */
+
+/* FOOTER */
+
+.footer_container {
+    height: 12vh;
+    padding: 0 1em;
+}
+
+hr.divider {
+    border-top: 2px solid #bbb;
+    padding: 0 1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/* END FOOTER */
