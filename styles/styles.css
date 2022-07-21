@@ -264,3 +264,21 @@ footer {
 }
 
 /* END FOOTER */
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    p, ul, h4 {
+        font-size: 0.9em;
+    }
+
+    h1, h2, .text_30 {
+        font-size: 1.2em;
+    }
+
+    .about_logo_link {
+        margin-left: 1.2em;
+    }
+}
+
+/* END MEDIA QUERY */
