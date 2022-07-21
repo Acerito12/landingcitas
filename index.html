@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/styles.css">
         <title>Citas Medicas</title>
     </head>
@@ -17,7 +18,7 @@
         <section id="home" class="home">
 
             <!-- LOGO / NAV / LANG -->
-            <div class="home_navbar row">
+            <div class="home_navbar row" #navbar>
                 <img src="images/logo.png" class="img_logo">
                 <ul class="row">
                     <li><a href="#home">Inicio</a></li>
@@ -30,6 +31,22 @@
                 </div>
             </div>
             <!-- END LOGO / NAV / LANG -->
+
+            <!-- SIDE NAV MOBILE -->
+            <div class="topnav" #sidenav>
+                <a href="#home" class="active"><img src="images/logo.png" class="img_logo"></a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="#home" onclick="topnavFunction()">Inicio</a>
+                    <a href="#about" onclick="topnavFunction()">Acerca de Citas Médicas</a>
+                    <a href="#contact" onclick="topnavFunction()">Contacto</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="topnavFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!-- END SIDE NAV MOBILE -->
 
             <!-- BIG LOGO / TEXT / HOME IMAGE -->
             <div class="row">
@@ -138,15 +155,15 @@
             <!-- CONTACT INFO -->
             <label class="contact_title">Contacto</label>
             <div class="icons_container">
-                <div class="col">
+                <div class="col col_mobile">
                     <img src="images/icons/mail.png" class="icon">
                     <h2>mail@citasmedicas.com</h2>
                 </div>
-                <div class="col">
+                <div class="col col_mobile">
                     <img src="images/icons/whats.png" class="icon" style="margin-bottom: 10px;">
                     <h2>(+52) 449 123456</h2>
                 </div>
-                <div class="col">
+                <div class="col col_mobile">
                     <img src="images/icons/phone.png" class="icon">
                     <h2>(+52) 449 987 6543</h2>
                 </div>
